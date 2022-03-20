@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table tree</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/tableTree.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="table-responsive">
+        <div class="table-tree">
+          <div class="table-tree__header">
+            <div class="table-tree__tr">
+              <div class="table-tree__th">Đơn vị</div>
+              <div class="table-tree__th">Số lượng nhân sự</div>
+              <div class="table-tree__th">Chi phí năm 2020</div>
+              <div class="table-tree__th">Chi phí được giao</div>
+              <div class="table-tree__th">Chi phí biến đổi (thưởng)</div>
+              <div class="table-tree__th">Thu nhập TB người/năm</div>
+              <div class="table-tree__th">Thưởng TB người/năm</div>
+              <div class="table-tree__th">CP cố định (lương)</div>
+              <div class="table-tree__th">Thưởng/Chi phí</div>
+              <div class="table-tree__th">Chi phí/Tổng doanh thu</div>
+              <div class="table-tree__th">Tỉ trọng chi phí</div>
+            </div>
+          </div>
+          <div class="table-tree__body">
+            <div class="table-tree__groups">
+              <div class="table-tree__item">
+                <div class="table-tree__tr">
+                  <div class="table-tree__td">
+                    <div class="table-tree__action">
+                      <span class="table-tree__icon table-tree__arrow">
+                        <img src="images/icon__arrow.svg" />
+                      </span>
+                      <span class="table-tree__name"> Khối Kinh doanh </span>
+                    </div>
+                  </div>
+                  <div class="table-tree__td">3</div>
+                  <div class="table-tree__td">6.000.000.000</div>
+                  <div class="table-tree__td">6.000.000.000</div>
+                  <div class="table-tree__td">3.000.000.000</div>
+                  <div class="table-tree__td">3.000.000.000</div>
+                  <div class="table-tree__td">3.000.000.000</div>
+                  <div class="table-tree__td">3.000.000.000</div>
+                  <div class="table-tree__td">30%</div>
+                  <div class="table-tree__td">3.000.000.000</div>
+                  <div class="table-tree__td">20%</div>
+                </div>
+                <div class="table-tree__groups">
+                  <div class="table-tree__item">
+                    <div class="table-tree__tr">
+                      <div class="table-tree__td">
+                        <div class="table-tree__action">
+                          <span class="table-tree__icon table-tree__arrow">
+                            <img src="images/icon__arrow.svg" />
+                          </span>
+                          <span class="table-tree__name">
+                            PB0001 - Phòng Kinh doanh miền Bắc
+                          </span>
+                        </div>
+                      </div>
+                      <div class="table-tree__td">3</div>
+                      <div class="table-tree__td">6.000.000.000</div>
+                      <div class="table-tree__td">6.000.000.000</div>
+                      <div class="table-tree__td">3.000.000.000</div>
+                      <div class="table-tree__td">3.000.000.000</div>
+                      <div class="table-tree__td">3.000.000.000</div>
+                      <div class="table-tree__td">3.000.000.000</div>
+                      <div class="table-tree__td">30%</div>
+                      <div class="table-tree__td">3.000.000.000</div>
+                      <div class="table-tree__td">20%</div>
+                    </div>
+                    <div class="table-tree__groups">
+                      <div class="table-tree__item">
+                        <div class="table-tree__tr">
+                          <div class="table-tree__td">
+                            <div class="table-tree__action">
+                              <span class="table-tree__icon table-tree__folder">
+                                <img src="images/icon__floder.svg" />
+                              </span>
+                              <span class="table-tree__name">
+                                VT0001 - Trưởng phòng kinh doanh
+                              </span>
+                            </div>
+                          </div>
+                          <div class="table-tree__td">3</div>
+                          <div class="table-tree__td">6.000.000.000</div>
+                          <div class="table-tree__td">6.000.000.000</div>
+                          <div class="table-tree__td">3.000.000.000</div>
+                          <div class="table-tree__td">3.000.000.000</div>
+                          <div class="table-tree__td">3.000.000.000</div>
+                          <div class="table-tree__td">3.000.000.000</div>
+                          <div class="table-tree__td">30%</div>
+                          <div class="table-tree__td">3.000.000.000</div>
+                          <div class="table-tree__td">20%</div>
+                        </div>
+                      </div>
+                      <div class="table-tree__item">
+                        <div class="table-tree__tr">
+                          <div class="table-tree__td">
+                            <div class="table-tree__action">
+                              <span class="table-tree__icon table-tree__arrow">
+                                <img src="images/icon__arrow.svg" />
+                              </span>
+                              <span class="table-tree__name">
+                                PB0001_01 - Bộ phận kinh doanh Đồng Bằng Sông
+                                Hồng
+                              </span>
+                            </div>
+                          </div>
+                          <div class="table-tree__td">3</div>
+                          <div class="table-tree__td">6.000.000.000</div>
+                          <div class="table-tree__td">6.000.000.000</div>
+                          <div class="table-tree__td">3.000.000.000</div>
+                          <div class="table-tree__td">3.000.000.000</div>
+                          <div class="table-tree__td">3.000.000.000</div>
+                          <div class="table-tree__td">3.000.000.000</div>
+                          <div class="table-tree__td">30%</div>
+                          <div class="table-tree__td">3.000.000.000</div>
+                          <div class="table-tree__td">20%</div>
+                        </div>
+                        <div class="table-tree__groups">
+                          <div class="table-tree__item">
+                            <div class="table-tree__tr">
+                              <div class="table-tree__td">
+                                <div class="table-tree__action">
+                                  <span
+                                    class="table-tree__icon table-tree__folder"
+                                  >
+                                    <img src="images/icon__floder.svg" />
+                                  </span>
+                                  <span class="table-tree__name">
+                                    VT0002 - Trưởng bộ phận kinh doanh
+                                  </span>
+                                </div>
+                              </div>
+                              <div class="table-tree__td">3</div>
+                              <div class="table-tree__td">6.000.000.000</div>
+                              <div class="table-tree__td">6.000.000.000</div>
+                              <div class="table-tree__td">3.000.000.000</div>
+                              <div class="table-tree__td">3.000.000.000</div>
+                              <div class="table-tree__td">3.000.000.000</div>
+                              <div class="table-tree__td">3.000.000.000</div>
+                              <div class="table-tree__td">30%</div>
+                              <div class="table-tree__td">3.000.000.000</div>
+                              <div class="table-tree__td">20%</div>
+                            </div>
+                          </div>
+                          <div class="table-tree__item">
+                            <div class="table-tree__tr">
+                              <div class="table-tree__td">
+                                <div class="table-tree__action">
+                                  <span
+                                    class="table-tree__icon table-tree__arrow"
+                                  >
+                                    <img src="images/icon__arrow.svg" />
+                                  </span>
+                                  <span class="table-tree__name">
+                                    PB0001_01_01 - Nhóm kinh doanh Hà Nội
+                                  </span>
+                                </div>
+                              </div>
+                              <div class="table-tree__td">3</div>
+                              <div class="table-tree__td">6.000.000.000</div>
+                              <div class="table-tree__td">6.000.000.000</div>
+                              <div class="table-tree__td">3.000.000.000</div>
+                              <div class="table-tree__td">3.000.000.000</div>
+                              <div class="table-tree__td">3.000.000.000</div>
+                              <div class="table-tree__td">3.000.000.000</div>
+                              <div class="table-tree__td">30%</div>
+                              <div class="table-tree__td">3.000.000.000</div>
+                              <div class="table-tree__td">20%</div>
+                            </div>
+                            <div class="table-tree__groups">
+                              <div class="table-tree__item">
+                                <div class="table-tree__tr">
+                                  <div class="table-tree__td">
+                                    <div class="table-tree__action">
+                                      <span
+                                        class="table-tree__icon table-tree__folder"
+                                      >
+                                        <img src="images/icon__floder.svg" />
+                                      </span>
+                                      <span class="table-tree__name">
+                                        VT0003 - Trưởng bộ phận kinh doanh
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="table-tree__td">3</div>
+                                  <div class="table-tree__td">
+                                    6.000.000.000
+                                  </div>
+                                  <div class="table-tree__td">
+                                    6.000.000.000
+                                  </div>
+                                  <div class="table-tree__td">
+                                    3.000.000.000
+                                  </div>
+                                  <div class="table-tree__td">
+                                    3.000.000.000
+                                  </div>
+                                  <div class="table-tree__td">
+                                    3.000.000.000
+                                  </div>
+                                  <div class="table-tree__td">
+                                    3.000.000.000
+                                  </div>
+                                  <div class="table-tree__td">30%</div>
+                                  <div class="table-tree__td">
+                                    3.000.000.000
+                                  </div>
+                                  <div class="table-tree__td">20%</div>
+                                </div>
+                              </div>
+                              <div class="table-tree__item">
+                                <div class="table-tree__tr">
+                                  <div class="table-tree__td">
+                                    <div class="table-tree__action">
+                                      <span
+                                        class="table-tree__icon table-tree__folder"
+                                      >
+                                        <img src="images/icon__floder.svg" />
+                                      </span>
+                                      <span class="table-tree__name">
+                                        VT0004 - Admin nhóm kinh doanh
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="table-tree__td">3</div>
+                                  <div class="table-tree__td">
+                                    6.000.000.000
+                                  </div>
+                                  <div class="table-tree__td">
+                                    6.000.000.000
+                                  </div>
+                                  <div class="table-tree__td">
+                                    3.000.000.000
+                                  </div>
+                                  <div class="table-tree__td">
+                                    3.000.000.000
+                                  </div>
+                                  <div class="table-tree__td">
+                                    3.000.000.000
+                                  </div>
+                                  <div class="table-tree__td">
+                                    3.000.000.000
+                                  </div>
+                                  <div class="table-tree__td">30%</div>
+                                  <div class="table-tree__td">
+                                    3.000.000.000
+                                  </div>
+                                  <div class="table-tree__td">20%</div>
+                                </div>
+                              </div>
+                              <div class="table-tree__item">
+                                <div class="table-tree__tr">
+                                  <div class="table-tree__td">
+                                    <div class="table-tree__action">
+                                      <span
+                                        class="table-tree__icon table-tree__folder"
+                                      >
+                                        <img src="images/icon__floder.svg" />
+                                      </span>
+                                      <span class="table-tree__name">
+                                        VT0005 - Nhân viên kinh doanh
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="table-tree__td">3</div>
+                                  <div class="table-tree__td">
+                                    6.000.000.000
+                                  </div>
+                                  <div class="table-tree__td">
+                                    6.000.000.000
+                                  </div>
+                                  <div class="table-tree__td">
+                                    3.000.000.000
+                                  </div>
+                                  <div class="table-tree__td">
+                                    3.000.000.000
+                                  </div>
+                                  <div class="table-tree__td">
+                                    3.000.000.000
+                                  </div>
+                                  <div class="table-tree__td">
+                                    3.000.000.000
+                                  </div>
+                                  <div class="table-tree__td">30%</div>
+                                  <div class="table-tree__td">
+                                    3.000.000.000
+                                  </div>
+                                  <div class="table-tree__td">20%</div>
+                                </div>
+                                <div class="table-tree__groups">
+                                  <div class="table-tree__item">
+                                    <div class="table-tree__tr">
+                                      <div class="table-tree__td">
+                                        <div class="table-tree__action">
+                                          <span
+                                            class="table-tree__icon table-tree__folder"
+                                          >
+                                            <img
+                                              src="images/icon__floder.svg"
+                                            />
+                                          </span>
+                                          <span class="table-tree__name">
+                                            VT0003 - Trưởng bộ phận kinh doanh
+                                          </span>
+                                        </div>
+                                      </div>
+                                      <div class="table-tree__td">3</div>
+                                      <div class="table-tree__td">
+                                        6.000.000.000
+                                      </div>
+                                      <div class="table-tree__td">
+                                        6.000.000.000
+                                      </div>
+                                      <div class="table-tree__td">
+                                        3.000.000.000
+                                      </div>
+                                      <div class="table-tree__td">
+                                        3.000.000.000
+                                      </div>
+                                      <div class="table-tree__td">
+                                        3.000.000.000
+                                      </div>
+                                      <div class="table-tree__td">
+                                        3.000.000.000
+                                      </div>
+                                      <div class="table-tree__td">30%</div>
+                                      <div class="table-tree__td">
+                                        3.000.000.000
+                                      </div>
+                                      <div class="table-tree__td">20%</div>
+                                    </div>
+                                  </div>
+                                  <div class="table-tree__item">
+                                    <div class="table-tree__tr">
+                                      <div class="table-tree__td">
+                                        <div class="table-tree__action">
+                                          <span
+                                            class="table-tree__icon table-tree__folder"
+                                          >
+                                            <img
+                                              src="images/icon__floder.svg"
+                                            />
+                                          </span>
+                                          <span class="table-tree__name">
+                                            VT0004 - Admin nhóm kinh doanh
+                                          </span>
+                                        </div>
+                                      </div>
+                                      <div class="table-tree__td">3</div>
+                                      <div class="table-tree__td">
+                                        6.000.000.000
+                                      </div>
+                                      <div class="table-tree__td">
+                                        6.000.000.000
+                                      </div>
+                                      <div class="table-tree__td">
+                                        3.000.000.000
+                                      </div>
+                                      <div class="table-tree__td">
+                                        3.000.000.000
+                                      </div>
+                                      <div class="table-tree__td">
+                                        3.000.000.000
+                                      </div>
+                                      <div class="table-tree__td">
+                                        3.000.000.000
+                                      </div>
+                                      <div class="table-tree__td">30%</div>
+                                      <div class="table-tree__td">
+                                        3.000.000.000
+                                      </div>
+                                      <div class="table-tree__td">20%</div>
+                                    </div>
+                                  </div>
+                                  <div class="table-tree__item">
+                                    <div class="table-tree__tr">
+                                      <div class="table-tree__td">
+                                        <div class="table-tree__action">
+                                          <span
+                                            class="table-tree__icon table-tree__folder"
+                                          >
+                                            <img
+                                              src="images/icon__floder.svg"
+                                            />
+                                          </span>
+                                          <span class="table-tree__name">
+                                            VT0005 - Nhân viên kinh doanh
+                                          </span>
+                                        </div>
+                                      </div>
+                                      <div class="table-tree__td">3</div>
+                                      <div class="table-tree__td">
+                                        6.000.000.000
+                                      </div>
+                                      <div class="table-tree__td">
+                                        6.000.000.000
+                                      </div>
+                                      <div class="table-tree__td">
+                                        3.000.000.000
+                                      </div>
+                                      <div class="table-tree__td">
+                                        3.000.000.000
+                                      </div>
+                                      <div class="table-tree__td">
+                                        3.000.000.000
+                                      </div>
+                                      <div class="table-tree__td">
+                                        3.000.000.000
+                                      </div>
+                                      <div class="table-tree__td">30%</div>
+                                      <div class="table-tree__td">
+                                        3.000.000.000
+                                      </div>
+                                      <div class="table-tree__td">20%</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="table-tree__item">
+                            <div class="table-tree__tr">
+                              <div class="table-tree__td">
+                                <div class="table-tree__action">
+                                  <span
+                                    class="table-tree__icon table-tree__folder"
+                                  >
+                                    <img src="images/icon__floder.svg" />
+                                  </span>
+                                  <span class="table-tree__name">
+                                    PB0001_01_01_01 - Nhóm kinh doanh Hải Phòng
+                                  </span>
+                                </div>
+                              </div>
+                              <div class="table-tree__td">3</div>
+                              <div class="table-tree__td">6.000.000.000</div>
+                              <div class="table-tree__td">6.000.000.000</div>
+                              <div class="table-tree__td">3.000.000.000</div>
+                              <div class="table-tree__td">3.000.000.000</div>
+                              <div class="table-tree__td">3.000.000.000</div>
+                              <div class="table-tree__td">3.000.000.000</div>
+                              <div class="table-tree__td">30%</div>
+                              <div class="table-tree__td">3.000.000.000</div>
+                              <div class="table-tree__td">20%</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="table-tree__item">
+                        <div class="table-tree__tr">
+                          <div class="table-tree__td">
+                            <div class="table-tree__action">
+                              <span class="table-tree__icon table-tree__arrow">
+                                <img src="images/icon__arrow.svg" />
+                              </span>
+                              <span class="table-tree__name">
+                                PB0001_01 - Bộ phận kinh doanh Đông bắc bộ
+                              </span>
+                            </div>
+                          </div>
+                          <div class="table-tree__td">3</div>
+                          <div class="table-tree__td">6.000.000.000</div>
+                          <div class="table-tree__td">6.000.000.000</div>
+                          <div class="table-tree__td">3.000.000.000</div>
+                          <div class="table-tree__td">3.000.000.000</div>
+                          <div class="table-tree__td">3.000.000.000</div>
+                          <div class="table-tree__td">3.000.000.000</div>
+                          <div class="table-tree__td">30%</div>
+                          <div class="table-tree__td">3.000.000.000</div>
+                          <div class="table-tree__td">20%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="table-tree__item">
+                    <div class="table-tree__tr">
+                      <div class="table-tree__td">
+                        <div class="table-tree__action">
+                          <span class="table-tree__icon table-tree__arrow">
+                            <img src="images/icon__arrow.svg" />
+                          </span>
+                          <span class="table-tree__name">
+                            PB0002 - Phòng kinh doanh miền Trung
+                          </span>
+                        </div>
+                      </div>
+                      <div class="table-tree__td">3</div>
+                      <div class="table-tree__td">6.000.000.000</div>
+                      <div class="table-tree__td">6.000.000.000</div>
+                      <div class="table-tree__td">3.000.000.000</div>
+                      <div class="table-tree__td">3.000.000.000</div>
+                      <div class="table-tree__td">3.000.000.000</div>
+                      <div class="table-tree__td">3.000.000.000</div>
+                      <div class="table-tree__td">30%</div>
+                      <div class="table-tree__td">3.000.000.000</div>
+                      <div class="table-tree__td">20%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="table-tree__item">
+                <div class="table-tree__tr">
+                  <div class="table-tree__td">
+                    <div class="table-tree__action">
+                      <span class="table-tree__icon table-tree__arrow">
+                        <img src="images/icon__arrow.svg" />
+                      </span>
+                      <span class="table-tree__name"> Khối Kinh doanh </span>
+                    </div>
+                  </div>
+                  <div class="table-tree__td">3</div>
+                  <div class="table-tree__td">6.000.000.000</div>
+                  <div class="table-tree__td">6.000.000.000</div>
+                  <div class="table-tree__td">3.000.000.000</div>
+                  <div class="table-tree__td">3.000.000.000</div>
+                  <div class="table-tree__td">3.000.000.000</div>
+                  <div class="table-tree__td">3.000.000.000</div>
+                  <div class="table-tree__td">30%</div>
+                  <div class="table-tree__td">3.000.000.000</div>
+                  <div class="table-tree__td">20%</div>
+                </div>
+                <div class="table-tree__groups">
+                  <div class="table-tree__item">
+                    <div class="table-tree__tr">
+                      <div class="table-tree__td">
+                        <div class="table-tree__action">
+                          <span class="table-tree__icon table-tree__arrow">
+                            <img src="images/icon__arrow.svg" />
+                          </span>
+                          <span class="table-tree__name">
+                            PB0001 - Phòng Kinh doanh miền Bắc
+                          </span>
+                        </div>
+                      </div>
+                      <div class="table-tree__td">3</div>
+                      <div class="table-tree__td">6.000.000.000</div>
+                      <div class="table-tree__td">6.000.000.000</div>
+                      <div class="table-tree__td">3.000.000.000</div>
+                      <div class="table-tree__td">3.000.000.000</div>
+                      <div class="table-tree__td">3.000.000.000</div>
+                      <div class="table-tree__td">3.000.000.000</div>
+                      <div class="table-tree__td">30%</div>
+                      <div class="table-tree__td">3.000.000.000</div>
+                      <div class="table-tree__td">20%</div>
+                    </div>
+                    <div class="table-tree__groups">
+                      <div class="table-tree__item">
+                        <div class="table-tree__tr">
+                          <div class="table-tree__td">
+                            <div class="table-tree__action">
+                              <span class="table-tree__icon table-tree__folder">
+                                <img src="images/icon__floder.svg" />
+                              </span>
+                              <span class="table-tree__name">
+                                VT0001 - Trưởng phòng kinh doanh
+                              </span>
+                            </div>
+                          </div>
+                          <div class="table-tree__td">3</div>
+                          <div class="table-tree__td">6.000.000.000</div>
+                          <div class="table-tree__td">6.000.000.000</div>
+                          <div class="table-tree__td">3.000.000.000</div>
+                          <div class="table-tree__td">3.000.000.000</div>
+                          <div class="table-tree__td">3.000.000.000</div>
+                          <div class="table-tree__td">3.000.000.000</div>
+                          <div class="table-tree__td">30%</div>
+                          <div class="table-tree__td">3.000.000.000</div>
+                          <div class="table-tree__td">20%</div>
+                        </div>
+                      </div>
+                      <div class="table-tree__item">
+                        <div class="table-tree__tr">
+                          <div class="table-tree__td">
+                            <div class="table-tree__action">
+                              <span class="table-tree__icon table-tree__arrow">
+                                <img src="images/icon__arrow.svg" />
+                              </span>
+                              <span class="table-tree__name">
+                                PB0001_01 - Bộ phận kinh doanh Đồng Bằng Sông
+                                Hồng
+                              </span>
+                            </div>
+                          </div>
+                          <div class="table-tree__td">3</div>
+                          <div class="table-tree__td">6.000.000.000</div>
+                          <div class="table-tree__td">6.000.000.000</div>
+                          <div class="table-tree__td">3.000.000.000</div>
+                          <div class="table-tree__td">3.000.000.000</div>
+                          <div class="table-tree__td">3.000.000.000</div>
+                          <div class="table-tree__td">3.000.000.000</div>
+                          <div class="table-tree__td">30%</div>
+                          <div class="table-tree__td">3.000.000.000</div>
+                          <div class="table-tree__td">20%</div>
+                        </div>
+                        <div class="table-tree__groups">
+                          <div class="table-tree__item">
+                            <div class="table-tree__tr">
+                              <div class="table-tree__td">
+                                <div class="table-tree__action">
+                                  <span
+                                    class="table-tree__icon table-tree__folder"
+                                  >
+                                    <img src="images/icon__floder.svg" />
+                                  </span>
+                                  <span class="table-tree__name">
+                                    VT0002 - Trưởng bộ phận kinh doanh
+                                  </span>
+                                </div>
+                              </div>
+                              <div class="table-tree__td">3</div>
+                              <div class="table-tree__td">6.000.000.000</div>
+                              <div class="table-tree__td">6.000.000.000</div>
+                              <div class="table-tree__td">3.000.000.000</div>
+                              <div class="table-tree__td">3.000.000.000</div>
+                              <div class="table-tree__td">3.000.000.000</div>
+                              <div class="table-tree__td">3.000.000.000</div>
+                              <div class="table-tree__td">30%</div>
+                              <div class="table-tree__td">3.000.000.000</div>
+                              <div class="table-tree__td">20%</div>
+                            </div>
+                          </div>
+                          <div class="table-tree__item">
+                            <div class="table-tree__tr">
+                              <div class="table-tree__td">
+                                <div class="table-tree__action">
+                                  <span
+                                    class="table-tree__icon table-tree__arrow"
+                                  >
+                                    <img src="images/icon__arrow.svg" />
+                                  </span>
+                                  <span class="table-tree__name">
+                                    PB0001_01_01 - Nhóm kinh doanh Hà Nội
+                                  </span>
+                                </div>
+                              </div>
+                              <div class="table-tree__td">3</div>
+                              <div class="table-tree__td">6.000.000.000</div>
+                              <div class="table-tree__td">6.000.000.000</div>
+                              <div class="table-tree__td">3.000.000.000</div>
+                              <div class="table-tree__td">3.000.000.000</div>
+                              <div class="table-tree__td">3.000.000.000</div>
+                              <div class="table-tree__td">3.000.000.000</div>
+                              <div class="table-tree__td">30%</div>
+                              <div class="table-tree__td">3.000.000.000</div>
+                              <div class="table-tree__td">20%</div>
+                            </div>
+                            <div class="table-tree__groups">
+                              <div class="table-tree__item">
+                                <div class="table-tree__tr">
+                                  <div class="table-tree__td">
+                                    <div class="table-tree__action">
+                                      <span
+                                        class="table-tree__icon table-tree__folder"
+                                      >
+                                        <img src="images/icon__floder.svg" />
+                                      </span>
+                                      <span class="table-tree__name">
+                                        VT0003 - Trưởng bộ phận kinh doanh
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="table-tree__td">3</div>
+                                  <div class="table-tree__td">
+                                    6.000.000.000
+                                  </div>
+                                  <div class="table-tree__td">
+                                    6.000.000.000
+                                  </div>
+                                  <div class="table-tree__td">
+                                    3.000.000.000
+                                  </div>
+                                  <div class="table-tree__td">
+                                    3.000.000.000
+                                  </div>
+                                  <div class="table-tree__td">
+                                    3.000.000.000
+                                  </div>
+                                  <div class="table-tree__td">
+                                    3.000.000.000
+                                  </div>
+                                  <div class="table-tree__td">30%</div>
+                                  <div class="table-tree__td">
+                                    3.000.000.000
+                                  </div>
+                                  <div class="table-tree__td">20%</div>
+                                </div>
+                              </div>
+                              <div class="table-tree__item">
+                                <div class="table-tree__tr">
+                                  <div class="table-tree__td">
+                                    <div class="table-tree__action">
+                                      <span
+                                        class="table-tree__icon table-tree__folder"
+                                      >
+                                        <img src="images/icon__floder.svg" />
+                                      </span>
+                                      <span class="table-tree__name">
+                                        VT0004 - Admin nhóm kinh doanh
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="table-tree__td">3</div>
+                                  <div class="table-tree__td">
+                                    6.000.000.000
+                                  </div>
+                                  <div class="table-tree__td">
+                                    6.000.000.000
+                                  </div>
+                                  <div class="table-tree__td">
+                                    3.000.000.000
+                                  </div>
+                                  <div class="table-tree__td">
+                                    3.000.000.000
+                                  </div>
+                                  <div class="table-tree__td">
+                                    3.000.000.000
+                                  </div>
+                                  <div class="table-tree__td">
+                                    3.000.000.000
+                                  </div>
+                                  <div class="table-tree__td">30%</div>
+                                  <div class="table-tree__td">
+                                    3.000.000.000
+                                  </div>
+                                  <div class="table-tree__td">20%</div>
+                                </div>
+                              </div>
+                              <div class="table-tree__item">
+                                <div class="table-tree__tr">
+                                  <div class="table-tree__td">
+                                    <div class="table-tree__action">
+                                      <span
+                                        class="table-tree__icon table-tree__folder"
+                                      >
+                                        <img src="images/icon__floder.svg" />
+                                      </span>
+                                      <span class="table-tree__name">
+                                        VT0005 - Nhân viên kinh doanh
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="table-tree__td">3</div>
+                                  <div class="table-tree__td">
+                                    6.000.000.000
+                                  </div>
+                                  <div class="table-tree__td">
+                                    6.000.000.000
+                                  </div>
+                                  <div class="table-tree__td">
+                                    3.000.000.000
+                                  </div>
+                                  <div class="table-tree__td">
+                                    3.000.000.000
+                                  </div>
+                                  <div class="table-tree__td">
+                                    3.000.000.000
+                                  </div>
+                                  <div class="table-tree__td">
+                                    3.000.000.000
+                                  </div>
+                                  <div class="table-tree__td">30%</div>
+                                  <div class="table-tree__td">
+                                    3.000.000.000
+                                  </div>
+                                  <div class="table-tree__td">20%</div>
+                                </div>
+                                <div class="table-tree__groups">
+                                  <div class="table-tree__item">
+                                    <div class="table-tree__tr">
+                                      <div class="table-tree__td">
+                                        <div class="table-tree__action">
+                                          <span
+                                            class="table-tree__icon table-tree__folder"
+                                          >
+                                            <img
+                                              src="images/icon__floder.svg"
+                                            />
+                                          </span>
+                                          <span class="table-tree__name">
+                                            VT0003 - Trưởng bộ phận kinh doanh
+                                          </span>
+                                        </div>
+                                      </div>
+                                      <div class="table-tree__td">3</div>
+                                      <div class="table-tree__td">
+                                        6.000.000.000
+                                      </div>
+                                      <div class="table-tree__td">
+                                        6.000.000.000
+                                      </div>
+                                      <div class="table-tree__td">
+                                        3.000.000.000
+                                      </div>
+                                      <div class="table-tree__td">
+                                        3.000.000.000
+                                      </div>
+                                      <div class="table-tree__td">
+                                        3.000.000.000
+                                      </div>
+                                      <div class="table-tree__td">
+                                        3.000.000.000
+                                      </div>
+                                      <div class="table-tree__td">30%</div>
+                                      <div class="table-tree__td">
+                                        3.000.000.000
+                                      </div>
+                                      <div class="table-tree__td">20%</div>
+                                    </div>
+                                  </div>
+                                  <div class="table-tree__item">
+                                    <div class="table-tree__tr">
+                                      <div class="table-tree__td">
+                                        <div class="table-tree__action">
+                                          <span
+                                            class="table-tree__icon table-tree__folder"
+                                          >
+                                            <img
+                                              src="images/icon__floder.svg"
+                                            />
+                                          </span>
+                                          <span class="table-tree__name">
+                                            VT0004 - Admin nhóm kinh doanh
+                                          </span>
+                                        </div>
+                                      </div>
+                                      <div class="table-tree__td">3</div>
+                                      <div class="table-tree__td">
+                                        6.000.000.000
+                                      </div>
+                                      <div class="table-tree__td">
+                                        6.000.000.000
+                                      </div>
+                                      <div class="table-tree__td">
+                                        3.000.000.000
+                                      </div>
+                                      <div class="table-tree__td">
+                                        3.000.000.000
+                                      </div>
+                                      <div class="table-tree__td">
+                                        3.000.000.000
+                                      </div>
+                                      <div class="table-tree__td">
+                                        3.000.000.000
+                                      </div>
+                                      <div class="table-tree__td">30%</div>
+                                      <div class="table-tree__td">
+                                        3.000.000.000
+                                      </div>
+                                      <div class="table-tree__td">20%</div>
+                                    </div>
+                                  </div>
+                                  <div class="table-tree__item">
+                                    <div class="table-tree__tr">
+                                      <div class="table-tree__td">
+                                        <div class="table-tree__action">
+                                          <span
+                                            class="table-tree__icon table-tree__folder"
+                                          >
+                                            <img
+                                              src="images/icon__floder.svg"
+                                            />
+                                          </span>
+                                          <span class="table-tree__name">
+                                            VT0005 - Nhân viên kinh doanh
+                                          </span>
+                                        </div>
+                                      </div>
+                                      <div class="table-tree__td">3</div>
+                                      <div class="table-tree__td">
+                                        6.000.000.000
+                                      </div>
+                                      <div class="table-tree__td">
+                                        6.000.000.000
+                                      </div>
+                                      <div class="table-tree__td">
+                                        3.000.000.000
+                                      </div>
+                                      <div class="table-tree__td">
+                                        3.000.000.000
+                                      </div>
+                                      <div class="table-tree__td">
+                                        3.000.000.000
+                                      </div>
+                                      <div class="table-tree__td">
+                                        3.000.000.000
+                                      </div>
+                                      <div class="table-tree__td">30%</div>
+                                      <div class="table-tree__td">
+                                        3.000.000.000
+                                      </div>
+                                      <div class="table-tree__td">20%</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="table-tree__item">
+                            <div class="table-tree__tr">
+                              <div class="table-tree__td">
+                                <div class="table-tree__action">
+                                  <span
+                                    class="table-tree__icon table-tree__folder"
+                                  >
+                                    <img src="images/icon__floder.svg" />
+                                  </span>
+                                  <span class="table-tree__name">
+                                    PB0001_01_01_01 - Nhóm kinh doanh Hải Phòng
+                                  </span>
+                                </div>
+                              </div>
+                              <div class="table-tree__td">3</div>
+                              <div class="table-tree__td">6.000.000.000</div>
+                              <div class="table-tree__td">6.000.000.000</div>
+                              <div class="table-tree__td">3.000.000.000</div>
+                              <div class="table-tree__td">3.000.000.000</div>
+                              <div class="table-tree__td">3.000.000.000</div>
+                              <div class="table-tree__td">3.000.000.000</div>
+                              <div class="table-tree__td">30%</div>
+                              <div class="table-tree__td">3.000.000.000</div>
+                              <div class="table-tree__td">20%</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="table-tree__item">
+                        <div class="table-tree__tr">
+                          <div class="table-tree__td">
+                            <div class="table-tree__action">
+                              <span class="table-tree__icon table-tree__arrow">
+                                <img src="images/icon__arrow.svg" />
+                              </span>
+                              <span class="table-tree__name">
+                                PB0001_01 - Bộ phận kinh doanh Đông bắc bộ
+                              </span>
+                            </div>
+                          </div>
+                          <div class="table-tree__td">3</div>
+                          <div class="table-tree__td">6.000.000.000</div>
+                          <div class="table-tree__td">6.000.000.000</div>
+                          <div class="table-tree__td">3.000.000.000</div>
+                          <div class="table-tree__td">3.000.000.000</div>
+                          <div class="table-tree__td">3.000.000.000</div>
+                          <div class="table-tree__td">3.000.000.000</div>
+                          <div class="table-tree__td">30%</div>
+                          <div class="table-tree__td">3.000.000.000</div>
+                          <div class="table-tree__td">20%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="table-tree__item">
+                    <div class="table-tree__tr">
+                      <div class="table-tree__td">
+                        <div class="table-tree__action">
+                          <span class="table-tree__icon table-tree__arrow">
+                            <img src="images/icon__arrow.svg" />
+                          </span>
+                          <span class="table-tree__name">
+                            PB0002 - Phòng kinh doanh miền Trung
+                          </span>
+                        </div>
+                      </div>
+                      <div class="table-tree__td">3</div>
+                      <div class="table-tree__td">6.000.000.000</div>
+                      <div class="table-tree__td">6.000.000.000</div>
+                      <div class="table-tree__td">3.000.000.000</div>
+                      <div class="table-tree__td">3.000.000.000</div>
+                      <div class="table-tree__td">3.000.000.000</div>
+                      <div class="table-tree__td">3.000.000.000</div>
+                      <div class="table-tree__td">30%</div>
+                      <div class="table-tree__td">3.000.000.000</div>
+                      <div class="table-tree__td">20%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        const iconArrow = $(".table-tree__arrow");
+        iconArrow.on("click", function () {
+          $(this).toggleClass("active");
+        });
+        const iconFolder = $(".table-tree__folder");
+
+        const countTableTreeTd = $(".table-tree__groups").length;
+        Array(countTableTreeTd)
+          .fill(null)
+          .forEach(function (_, index) {
+            $(
+              `.table-tree__groups:eq(${index}) .table-tree__item .table-tree__tr .table-tree__td:first-child`
+            ).css({
+              width: 380 + 22 * (countTableTreeTd - index),
+            });
+          });
+        const widthTableThFirstChild = $(
+          ".table-tree__groups .table-tree__item .table-tree__tr .table-tree__td:first-child"
+        ).width();
+        $(
+          ".table-tree__header .table-tree__tr .table-tree__th:first-child"
+        ).css({ width: widthTableThFirstChild });
+      });
+    </script>
+  </body>
+</html>

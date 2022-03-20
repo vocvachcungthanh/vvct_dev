@@ -1,0 +1,159 @@
+:root {
+  --textColor: #212529;
+  --bgcTableHeader: #ececec;
+  --borderColor: #c1c1c1;
+  --bgcTrTh: #f8f8f8;
+  --bgcScrollThumb: #bfbfbf;
+  --bgcScrollTrack: #ececec;
+}
+
+.container {
+  max-width: 1366px;
+  margin: auto;
+  padding: 30px 15px;
+}
+
+.table-responsive {
+  overflow: auto;
+  border-right: 0.5px solid;
+  border-image-slice: 1;
+  border-width: 0.5px;
+  border-image-source: linear-gradient(to bottom, var(--borderColor) 86%, white 0%);
+  padding-bottom: 15px;
+  position: relative;
+}
+.table-responsive::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+}
+.table-responsive::-webkit-scrollbar-track {
+  background: var(--bgcScrollTrack);
+  border-radius: 8px;
+}
+.table-responsive::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: var(--bgcScrollThumb);
+}
+.table-responsive::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.table-tree {
+  min-width: 1366px;
+}
+.table-tree .table-tree__header {
+  position: sticky;
+  top: 0;
+}
+.table-tree .table-tree__header .table-tree__tr .table-tree__th {
+  font-weight: 500;
+  background-color: var(--bgcTableHeader);
+}
+.table-tree .table-tree__header .table-tree__tr .table-tree__th:first-child {
+  border-left: 0.5px solid var(--borderColor);
+}
+.table-tree .table-tree__tr {
+  display: flex;
+  align-items: center;
+  justify-self: flex-end;
+}
+.table-tree .table-tree__th,
+.table-tree .table-tree__td {
+  padding: 8px;
+  font-size: 14px;
+  min-width: 176px;
+  border-top: 0.5px solid var(--borderColor);
+  border-bottom: 0.5px solid var(--borderColor);
+  border-right: 0.5px solid var(--borderColor);
+}
+.table-tree .table-tree__th:first-child,
+.table-tree .table-tree__td:first-child {
+  min-width: max-content;
+  position: sticky;
+  left: 0;
+  width: 490px;
+  background-color: #fff;
+  flex-shrink: 0;
+}
+.table-tree .table-tree__th:last-child,
+.table-tree .table-tree__td:last-child {
+  border-right: 1px solid transparent;
+}
+.table-tree .table-tree__body .table-tree__tr:first-child .table-tree__td {
+  border-top: 0.5px solid transparent;
+}
+.table-tree .table-tree__body .table-tree__tr .table-tree__td {
+  background-color: var(--bgcTrTh);
+  height: 36px;
+}
+.table-tree .table-tree__body .table-tree__tr .table-tree__td:first-child {
+  background-color: white;
+  padding: 0;
+  border-bottom: 0px solid transparent;
+  border-top: 0px solid transparent;
+  border-right: 0px solid transparent;
+}
+.table-tree .table-tree__body .table-tree__groups {
+  position: relative;
+  z-index: 2;
+}
+.table-tree .table-tree__body .table-tree__groups::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: calc(100% - 36px);
+  background-color: var(--bgcTableHeader);
+  left: 11px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.table-tree .table-tree__body .table-tree__groups .table-tree__item {
+  position: relative;
+  z-index: 3;
+}
+.table-tree .table-tree__body .table-tree__groups .table-tree__item .table-tree__tr .table-tree__td .table-tree__action {
+  background-color: var(--bgcTrTh);
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border: 0.5px solid var(--borderColor);
+  height: 36px;
+  position: relative;
+}
+.table-tree .table-tree__body .table-tree__groups .table-tree__item .table-tree__tr .table-tree__td .table-tree__action::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  background-color: var(--bgcTableHeader);
+  left: -11px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.table-tree .table-tree__body .table-tree__groups .table-tree__item .table-tree__tr .table-tree__td .table-tree__action .table-tree__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  transition: 0.2s all;
+  cursor: pointer;
+}
+.table-tree .table-tree__body .table-tree__groups .table-tree__item .table-tree__tr .table-tree__td .table-tree__action .table-tree__icon.active {
+  transition: 0.2s all;
+  transform: rotate(90deg);
+}
+.table-tree .table-tree__body .table-tree__groups .table-tree__item .table-tree__tr .table-tree__td .table-tree__action .table-tree__icon img {
+  object-fit: contain;
+}
+.table-tree .table-tree__body .table-tree__groups .table-tree__item .table-tree__tr .table-tree__td .table-tree__action .table-tree__name {
+  font-weight: 500;
+}
+.table-tree .table-tree__body .table-tree__groups .table-tree__item .table-tree__groups {
+  margin-left: 22px;
+}
+
+/*# sourceMappingURL=tableTree.css.map */
